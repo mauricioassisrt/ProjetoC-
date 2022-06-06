@@ -1,8 +1,64 @@
 ﻿@{
-    ViewData["Title"] = "TESTE";
+    ViewData["Title"] = "Listagem de contatos";
 }
+<div class="container">
+    <div class="form-control bg-light p-5 rounded">
+        <h3 class="display-4">Listagems de contatos</h3>
+        <div class="">
+            <a class="btn btn-primary" role="button" asp-controller="Contato" asp-action="Criar"> Adicionar Contato</a>
+        </div>
+        <div class="text-center">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Celular</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>email</td>
+                        <td>aa12312312</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                                <a role="button" class="btn btn-warning" asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>email</td>
+                        <td>aa12312312</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                                <a role="button" class="btn btn-warning" asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>email</td>
+                        <td>aa12312312</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                                <a role="button" class="btn btn-warning" asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-<div class="text-center">
-    <h1 class="display-4">Bem Vindo</h1>
-    <p>Sistema de controle de contatos </p>
+
+    </div>
 </div>
