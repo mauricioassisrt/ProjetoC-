@@ -71,12 +71,33 @@
     <Content Include="App_Data\BancoAgenda_log.ldf">
       <DependentUpon>BancoAgenda.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Data\BancoProjeto.mdf" />
+    <Content Include="App_Data\BancoProjeto_log.ldf">
+      <DependentUpon>BancoProjeto.mdf</DependentUpon>
+    </Content>
+    <Content Include="Imagens\agenda.png" />
+    <Content Include="Index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPagePrincipal.Master.cs">
+      <DependentUpon>MasterPagePrincipal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPagePrincipal.Master.designer.cs">
+      <DependentUpon>MasterPagePrincipal.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterPagePrincipal.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
