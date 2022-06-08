@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPagePrincipal.master.cs" Inherits="AgendaWebForms.MasterPagePrincipal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <header>
+            <h1>Agenda </h1>
+
+        </header>
+        <nav>
+            <p>Menu</p>
+        </nav>
+        <main>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </main>
+        <footer>
+            <h2>Site desenvolvido por Mauricio </h2>
+        </footer>
+
+    </form>
+</body>
+</html>
