@@ -140,5 +140,5 @@
             <asp:Parameter Name="email" Type="String" />
         </UpdateParameters>
     </asp:SqlDataSource>
-    <asp:Label ID="lMsg" runat="server"></asp:Label>
+<asp:Label ID="lMsg" runat="server"></asp:Label>
 </asp:Content>
